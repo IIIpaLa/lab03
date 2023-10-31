@@ -2,9 +2,14 @@ def bubble_sort(arr):
     n = len(arr)
     for i in range(n-1):
         for j in range(n-i-1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+            if Vib == "по убыванию":
+                if arr[j] > arr[j+1]:
+                    arr[j], arr[j+1] = arr[j+1], arr[j]
+            else:
+                if arr[j] < arr[j+1]:
+                    arr[j], arr[j+1] = arr[j+1], arr[j]
 
+Vib = input("Введите 'по убыванию' или 'по возростанию'")
 # Запросить у пользователя ввод чисел, разделенных пробелом
 user_input = input("Введите числа, разделенные пробелом: ")
 # Преобразовать введенные числа в список
